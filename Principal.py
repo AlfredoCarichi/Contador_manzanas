@@ -37,7 +37,7 @@ gdown.download(url, output)
 def main():
     
     st.header('Aplicación para el conteo de manzanas en el árbol')
-    st.markdown('Esta aplicación esta desarrollada por el Lic. Brayan Murillo y Yulesli Guillén. Para el conteo de las manzanas en el árbol se utiliza una red neuronal convolucional la cual fue entrenada con una GPU RTX 4060, 1100 imágenes de entrenamiento y 220 de validación. Se hicieron 100 épocas las cuales dieron como resultado un archivo PyTorch el cual es el que hace las detecciones. Todo fue desarrollado en el lenguaje Python.')
+    st.markdown('Esta aplicación esta desarrollada por el Lic. Brayan Murillo y Yulesli Guillén. Para el conteo de las manzanas en el árbol se utiliza una red neuronal convolucional la cual fue entrenada con una GPU RTX 4060, 1100 imágenes de entrenamiento y 220 de validación. Se hicieron 100 épocas las cuales dieron como resultado un archivo PyTorch el cual es el que hace las detecciones. Todo fue desarrollado en el lenguaje Python. La aplicación puede ser mejorada sustancialmente utilizando una red neuronal mas compleja, pero por cuestiones de tiempo y eficiencia se utilizó la más simple de todas.')
     file_uploader = st.file_uploader('Sube tu imagen en los siguientes formatos: ', type=['jpg', 'png'])
 
     if file_uploader is not None:
